@@ -1,0 +1,21 @@
+style=.config/wofi/src/yellow_power/style.css
+show=drun
+insensitive=true
+width=750
+prompt=
+term=kitty
+normal_window=false
+columns=2
+lines=8
+always_parse_args=true
+allow_images=false
+gtk_dark=false
+
+# Custom keybinds
+key_up=Shift-K
+key_down=Shift-J
+key_left=Shift-H
+key_right=Shift-L
+key_expand=Tab
+key_hide_search=Shift-S
+

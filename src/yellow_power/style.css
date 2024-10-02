@@ -1,0 +1,102 @@
+@define-color blue #333541;
+@define-color dark-blue #24252e;
+@define-color yellow #edc087;
+@define-color light-yellow #fdf4e2;
+
+######################
+###  Yellow Power  ### 
+###################### 
+
+* {
+    margin: 0px;
+    border: none;
+}
+
+window {
+    font-family: "Fira Code", "Cascadia Code", Inconsolata, system-ui;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 5px;
+    border: 1px solid @yellow;
+    background-color: @blue;
+}
+
+#input {
+    margin: 5px;
+    color: @light-yellow;
+    border-radius: 0px;
+    background-color: @dark-blue;
+    outline-color: @light-yellow;
+}
+
+#input:focus {
+    border-color: @light-yellow;
+    box-shadow: none;
+}
+
+#inner-box {
+    margin: 5px;
+}
+
+#outer-box {
+    margin: 5px;
+    background-color: @blue;
+}
+
+#scroll {
+    margin: 0px;
+}
+
+#text {
+    color: @light-yellow;
+    margin: 5px;
+}
+
+#text:selected {
+    color: @blue;
+    font-weight: 600;
+}
+
+#entry {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#entry arrow {
+color: @yellow;
+}
+
+#entry:selected arrow {
+color: @blue;
+}
+
+#entry:first-child,
+#entry:nth-child(4n),
+#entry:nth-child(4n) + #entry {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+#entry:selected,
+#entry:nth-child(4n) + #entry:selected {
+    background-color: @yellow;
+}
+
+#expander-box > #entry {
+background-color: @blue;
+border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#expander-box > #entry:active {
+box-shadow: none;
+}
+
+#expander-box > #entry:selected {
+background-color: @yellow;
+}
+
+#expander-box label {
+color: @light-yellow;
+}
+
+#expander-box > #entry:selected label {
+color: @blue; 
+}
